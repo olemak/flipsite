@@ -1,0 +1,19 @@
+{
+  "name": "flipsite",
+  "version": "1.0.0",
+  "description": "Web design does not have to be so difficult. Lay down a solid typography, pick out a nicely balanced palette, adjust pick an icon set... and you're more than halfway there.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Ole Martin Kristiansen",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "redux": "^3.7.2",
+    "webpack": "^3.5.3"
+  }
+}
