@@ -1,0 +1,1 @@
+export function flip (flipee) {return !flipee }

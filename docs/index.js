@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b21f5ad7472dcf7c309f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "49f670790f805c9b0f2d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -240,7 +240,7 @@
 /******/ 				};
 /******/ 			});
 /******/ 			hotUpdate = {};
-/******/ 			var chunkId = 0;
+/******/ 			var chunkId = 2;
 /******/ 			{ // eslint-disable-line no-lone-blocks
 /******/ 				/*globals chunkId */
 /******/ 				hotEnsureUpdateChunk(chunkId);
@@ -713,14 +713,16 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(0)(__webpack_require__.s = 0);
+/******/ 	return hotCreateRequire(19)(__webpack_require__.s = 19);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 19:
 /***/ (function(module, exports) {
 
 console.log("flipping styles like a madman")
 
 /***/ })
-/******/ ]);
+
+/******/ });
