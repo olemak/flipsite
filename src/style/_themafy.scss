@@ -1,0 +1,16 @@
+@import 'thema';
+
+$colors: map-get($thema, "colors" );
+$align: ("left","right","center");
+
+@each $color in map-keys($colors) {
+    [text*=#{$color}] {
+        color: map-get($colors, $color);
+    }
+}
+
+@each $alignment in $align {
+    [text*=#{$alignment}] {
+        text-align: #{$alignment};
+    }
+}
