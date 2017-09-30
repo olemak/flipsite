@@ -2,21 +2,21 @@
 
 var root = document.createElement("div")
     root.innerHTML = 
-  `<h1>Header One</h1>
+  `<h1 text="big bold red contrast">Header One</h1>
    <h2>Header Two</h2>
    <p>
        Wants pawn term dare worsted ladle gull hoe hat search putty yowler coils debt pimple colder Guilty Looks.  Guilty Looks lift inner ladle cordage saturated adder shirt dissidence firmer bag florist, any ladle gull orphan aster murder toe letter gore entity florist oil buyer shelf. 
     </p>
-    <p text="big red center">
+    <p text="big heavy red center">
         "Guilty Looks!"  crater murder angularly, "Hominy terms arena garner asthma suture stooped quiz-chin?  Goiter door florist? Sordidly NUT!"
     </p>
-    <p>
-        "Wire nut, murder?  wined Guity Looks, hoe dint peony tension tore murder's scaldings.
+    <p class="text__paragraph">
+        <span text="bold">Regular paragraph.</span> "Wire nut, murder?  wined Guity Looks, hoe dint peony tension tore murder's scaldings.
     </p>
     <p text="right small blue">
        "Cause dorsal lodge an wicket beer inner florist hoe orphan molasses pimple.  ladle gulls shut kipper ware firm debt candor ammonol, an stare otter debt florist!  Debt florist's mush toe dentures furry ladle gull!"
     </p>
-   <h3>Header Three</h3>
+   <h3  class="text__paragraph--highlight">Header Three</h3>
    <h4>Header Four</h4>
    <p>Paragraph</p>
    <small>small</small>
