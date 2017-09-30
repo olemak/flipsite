@@ -1,0 +1,9 @@
+// Mixins
+@mixin flip-color($color, $backgroundColor: "none"){
+    color: flop-color($color);
+    @if ($backgroundColor == "contrast") {
+        background-color: flop-color($color, "contrast");
+    } @else if ($backgroundColor != "none") {
+        background-color: flop-color($color, $backgroundColor);
+    }
+}

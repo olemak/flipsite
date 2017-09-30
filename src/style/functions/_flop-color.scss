@@ -1,0 +1,7 @@
+// functions 
+
+@function flop-color($requestedColor, $variant: "main") {
+    $colorSet: map-get($colors, $requestedColor);
+    $returnColor: map-get($colorSet, $variant);
+    @return $returnColor;    
+}
