@@ -50,7 +50,6 @@
         "maps": [ "config.json", "static.json" ]
       },
       "postcss-cssnext": {},
-      "autoprefixer": {},
       "cssnano": {}
     }
   }
