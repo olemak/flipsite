@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Web design does not have to be so difficult. Lay down a solid typography, pick out a nicely balanced palette, adjust pick an icon set... and you're more than halfway there.",
   "main": "index.js",
+  "browserslist": [
+      "> 1%",
+      "last 2 versions"
+  ],  
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "webpack-dev-server"
   },
   "author": "Ole Martin Kristiansen",
   "license": "ISC",
