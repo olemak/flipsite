@@ -1,0 +1,10 @@
+@mixin flip-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "header     header      header      header  header  header  header  header  header  header  header  header" 
+        "body       body        body        body    body    body    body    body    body    body    body    body"
+        "footer     footer      footer      footer  footer  footer  footer  footer  footer  footer  footer  footer";
+    grid-gap: 1em;
+}

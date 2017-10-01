@@ -6,6 +6,9 @@
 
 // Data
 $colors: map-get($thema, "colors" );
+$sizes: map-get($thema, "sizes" );
+$spaces: map-get($thema, "spaces" );
+$apects: map-get($thema, "aspects" );
 
 
 // prototyping  css
@@ -30,6 +33,26 @@ $colors: map-get($thema, "colors" );
         font-weight: map-get($fontweights, $fontweight);
     }    
 }
+
+@each $layer in map-keys($layers) {
+    [position*=#{$layer}] {
+        z-index: map-get($layers, $layer);
+    }    
+}
+
+@each $size in map-keys($sizes) {
+    [image*=#{$size}] {
+        width: map-get($sizes, $size) * 1%;
+        height: auto;
+    }    
+}
+
+
+[grid=container] {
+    @include flip-grid;
+    border: 1px solid red;    
+}
+
 
 /*
 .text {

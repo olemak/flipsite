@@ -16,5 +16,35 @@ $thema: (
       main: #FF4523,
       contrast: #3333FF
     )
+  ),
+  spaces: (
+    none: 0,
+    fine: 2,
+    tiny: 4,
+    small: 8,
+    medium: 16,
+    large: 32,
+    huge: 64,
+    massive: 128
+  ),
+  sizes: (
+    tiny: 25,
+    small: 50,
+    medium: 100,
+    large: 200
+  ),
+  aspects: (
+    tall: 0.5,
+    portrait: 0.75,
+    square: 1,
+    landscape: 1.33,
+    wide: 1.77
+  ),
+  durations: (
+    instant: 0.25,
+    fast: 0.5,
+    medium: 0.75,
+    slow: 1.5,
+    glacial: 10
   )
 );
