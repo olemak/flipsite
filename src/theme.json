@@ -1,24 +1,41 @@
 {
     "colors": {
-        "red": {
+        "brand": {
             "main":"#FF4523",
             "contrast": "#3333FF"
         },
-        "pink": {
+        
+        "alert": {
+            "main":"#FF4523",
+            "contrast": "#3333FF"
+        },
+        "success": {
             "main":"#F4523F",
             "contrast": "#3333FF"
         },
-        "blue": {
-            "main":"#FF4523",
+        "info": {
+            "main":"#336B87",
             "contrast": "#3333FF"
         },
-        "black": {
-            "main":"#FF4523",
+        "warn": {
+            "main":"#763626",
             "contrast": "#3333FF"
-        }      
+        },
+
+        "black": {
+            "main":"#2A3132",
+            "contrast": "#90AFC5"
+        },
+        "white": {
+            "main":"#222222",
+            "contrast": "#2A3132"
+        },
+        "gray": {
+            "main":"#90AFC5",
+            "contrast": "#2A3131"
+        }
     },
     "spaces": {
-        "none": 0,
         "fine": 2,
         "tiny": 4,
         "small": 8,

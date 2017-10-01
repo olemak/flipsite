@@ -1,4 +1,6 @@
+@import './css/typography.css';
 
-* {
-    border: 1px solid blue;
+div {
+    background: map(theme, colors, info, main);
+    content: map(static, alignment, left);
 }

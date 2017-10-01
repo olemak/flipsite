@@ -4,9 +4,9 @@
   "description": "Web design does not have to be so difficult. Lay down a solid typography, pick out a nicely balanced palette, adjust pick an icon set... and you're more than halfway there.",
   "main": "index.js",
   "browserslist": [
-      "> 1%",
-      "last 2 versions"
-  ],  
+    "> 1%",
+    "last 2 versions"
+  ],
   "scripts": {
     "test": "mocha",
     "start": "webpack-dev-server"
@@ -33,6 +33,8 @@
     "foundation-sites": "^6.4.3",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.5.3",
+    "postcss-import-json": "^1.0.0",
+    "postcss-map": "^0.9.0",
     "sass-loader": "^6.0.6",
     "scss-loader": "0.0.1",
     "style-loader": "^0.18.2",
@@ -43,6 +45,10 @@
     "parser": "postcss-scss",
     "plugins": {
       "postcss-import": {},
+      "postcss-map": {
+        "basePath": "./src/",
+        "maps": [ "theme.json", "static.json" ]
+      },
       "postcss-cssnext": {},
       "autoprefixer": {},
       "cssnano": {}
