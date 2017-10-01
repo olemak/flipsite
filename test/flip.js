@@ -2,8 +2,8 @@
 
 const expect = require('chai').expect
 
-//const flip = require('../src/script/flip.js').flip
-import { flip } from '../src/script/flip'
+const flip = require('../src/script/flip.js').flip
+//import { flip } from '../src/script/flip'
 
 //console.log("MOTHERFLIPPING: ",flip(true))
 
