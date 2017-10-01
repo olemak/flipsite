@@ -5,7 +5,8 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     js: './script.entry.js',
-    css: './style.entry.scss'
+    scss: './style.entry.scss',
+    css: './style.entry.css'
   },
   output: {
     path: path.resolve(__dirname, './docs'),
@@ -18,7 +19,7 @@ module.exports = {
    module: {
      rules: [
        {
-         test: /\.scss|.css$/,
+         test: /\.scss$/,
          use: [{
           loader: "style-loader" // creates style nodes from JS strings
           }, {
@@ -27,6 +28,10 @@ module.exports = {
           loader: "sass-loader" // compiles Sass to CSS
           }]
        }, {
+         test: /\.css$/,
+         use:  ['style-loader', 'postcss-loader']
+       },
+        {
         test: /\.jsx/,
         use: [
          'react-loader'
