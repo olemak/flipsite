@@ -1,6 +1,7 @@
 @import './css/typography.css';
 
 div {
-    background: map(theme, colors, info, main);
-    content: map(static, alignment, left);
+    background: map(color, brand, main);
+    text-align: map(static, alignment, right);
+
 }

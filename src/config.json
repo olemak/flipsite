@@ -1,5 +1,5 @@
 {
-    "colors": {
+    "color": {
         "brand": {
             "main":"#FF4523",
             "contrast": "#3333FF"
@@ -35,7 +35,7 @@
             "contrast": "#2A3131"
         }
     },
-    "spaces": {
+    "space": {
         "fine": 2,
         "tiny": 4,
         "small": 8,
@@ -44,20 +44,20 @@
         "huge": 64,
         "massive": 128
     },
-    "sizes": {
+    "size": {
         "tiny":     25,
         "small":    50,
         "medium":   100,
         "large":    200
     },
-    "aspects": {
+    "aspect": {
         "tall":      0.5,
         "portrait":  0.75,
         "square":    1,
         "landscape": 1.33,
         "wide":      1.77
     },
-    "durations": {
+    "duration": {
         "instant": 0.25,
         "fast": 0.5,
         "medium": 0.75,

@@ -47,7 +47,7 @@
       "postcss-import": {},
       "postcss-map": {
         "basePath": "./src/",
-        "maps": [ "theme.json", "static.json" ]
+        "maps": [ "config.json", "static.json" ]
       },
       "postcss-cssnext": {},
       "autoprefixer": {},
