@@ -1,3 +1,5 @@
-body {
-    background-color: lightslategray;
-}
+@import '~normalize.css';
+@import "~foundation-sites/scss/foundation";
+
+@import "./typography";
+@import "./themafy";

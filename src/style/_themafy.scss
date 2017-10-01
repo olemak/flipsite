@@ -1,0 +1,51 @@
+@import 'thema';
+
+// Data
+$colors: map-get($thema, "colors" );
+$alignments: ("left","right","center");
+$fontweights: (thin: 100, extralight: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700, extrabold: 800, heavy: 900);
+// functions 
+
+@function flip-color($requestedColor, $variant: "main") {
+    $colorSet: map-get($colors, $requestedColor);
+    $returnColor: map-get($colorSet, $variant);
+    @return $returnColor;    
+}
+
+// Mixins
+@mixin flip-color($color, $backgroundColor: "none"){
+    color: flip-color($color);
+    @if ($backgroundColor == "contrast") {
+        background-color: flip-color($color, "contrast");
+    } @else if ($backgroundColor != "none") {
+        background-color: flip-color($color, $backgroundColor);
+    }
+}
+
+// Making css
+@each $color in map-keys($colors) {
+    [text*=#{$color}] {
+        color: flip-color($color);
+        &[text*=contrast] {
+            background-color: flip-color($color, "contrast");        
+        }
+    }
+}
+
+@each $alignment in $alignments {
+    [text*=#{$alignment}] {
+        text-align: #{$alignment};
+    }
+}
+
+@each $fontweight in map-keys($fontweights) {
+    [text*=#{$fontweight}] {
+        font-weight: map-get($fontweights, $fontweight);
+    }    
+}
+
+.text {
+    &__paragraph {
+        @include flip-color(red);
+    }
+}

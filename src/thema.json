@@ -1,0 +1,20 @@
+{
+    "colors": {
+        "red": {
+            "main":"#FF4523",
+            "contrast": "#3333FF"
+        },
+        "pink": {
+            "main":"#F4523F",
+            "contrast": "#3333FF"
+        },
+        "blue": {
+            "main":"#FF4523",
+            "contrast": "#3333FF"
+        },
+        "black": {
+            "main":"#FF4523",
+            "contrast": "#3333FF"
+        }      
+    }
+}
